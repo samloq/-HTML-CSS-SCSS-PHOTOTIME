@@ -1,0 +1,49 @@
+{
+  "name": "phototime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm-run-all test:*",
+    "test:html": "html-validator --file index.html",
+    "init-project": "npm install && npm-run-all init:*",
+    "init:dirs": "mkdirp sass/helpers sass/layout sass/components css images js",
+    "init:helpers-project-files": "touch sass/helpers/all.scss sass/helpers/_colors.scss sass/helpers/_mixins.scss sass/helpers/_variables.scss",
+    "init:layout-project-files": "touch sass/layout/all.scss sass/layout/_hero.scss sass/layout/_footer.scss sass/layout/_navigation.scss",
+    "init:components-project-files": "touch sass/components/all.scss sass/components/_carousel.scss sass/components/_buttons.scss",
+    "init:files": "touch README.md index.html sass/style.scss js/script.js",
+    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
+    "build": "npm-run-all build:* test",
+    "build:clean": "rimraf css",
+    "build:sass": "node-sass --output-style compact -o css sass",
+    "build:autoprefixer": "autoprefixer-cli css/style.css",
+    "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
+    "watch": "npm-run-all build -p watch:*",
+    "watch:sassprefixer": "onchange -d 100 sass -- npm-run-all build-dev:sass -s build:autoprefixer",
+    "watch:browsersync": "browser-sync start --server --files 'css/style.css' '*.html' -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.23.7",
+    "globstar": "^1.0.0",
+    "mappy-breakpoints": "^0.2.3",
+    "html-validator-cli": "^6.0.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.8.3",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^3.3.0",
+    "rimraf": "^2.6.2"
+  }
+}

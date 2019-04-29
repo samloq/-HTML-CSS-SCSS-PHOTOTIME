@@ -1,0 +1,15 @@
+.footer {
+	background:$footer-section-bg;
+	img {
+		padding: 20px;
+	}
+	p {
+		color: $footer-paragraph-color;
+		text-align: center;
+		font-family: Gotham-Rounded-Book;
+	}
+	p:first-of-type {
+		margin-top: 20px;
+		text-align: center;
+	}
+}

@@ -1,0 +1,76 @@
+.btn {
+	width: 166px;
+	height: 49px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	color: white;
+	text-transform: uppercase;
+	border-color: none;
+}
+
+.brand-btn-container {
+  width: 299px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+//clearfix
+.brand-btn-container:after {
+	display: block;
+	content: '';
+	clear:both;
+}
+
+.brand-button {
+  background: #1abc9c;
+  width: 240px;
+  height: 56px;
+  border: none;
+  outline: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: Gotham-Rounded-Medium;
+  color: white;
+  float: left;
+}
+
+.badge {
+  height: 56px;
+  background: #16a085;
+  border-radius: 0;
+  display: block;
+}
+
+.fa-apple {
+  font-size: 56px;
+  margin-left: 5px;
+  color: white; 
+  line-height: 45px;
+}
+
+.fa-android {
+  font-size: 56px;
+  margin-left: 5px;
+  color: white; 
+  line-height: 45px;
+}
+
+@media (max-width: 768px) {
+  .brand-btn-container {
+    width: 180px;
+    .brand-button {
+      width: 120px;
+    }
+  }
+}
+
+
+
+
+.btn-green {
+   @include button($green-button);
+}

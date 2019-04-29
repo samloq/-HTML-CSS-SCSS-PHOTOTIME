@@ -1,0 +1,33 @@
+.gallery {
+	height: $section-height;
+	background:	$gallery-bg-color;
+	.container {
+		position: relative;
+		top:20%;
+		.carousel-control {
+			.next,.prev {
+				position: relative;
+				display: inline-block;
+				left: 98%;
+				font-size: 20px;
+			}
+		}
+		.gallery-carousel {
+			img {
+				transition: 10s;
+				&:hover {
+					transform: scale(1.09);
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	@media (max-width: 768px) {
+		.container {
+			top: 30%;
+			.carousel-control {
+				display: none;
+			}
+		}
+	}	
+}

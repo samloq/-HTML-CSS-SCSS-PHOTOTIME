@@ -1,0 +1,37 @@
+.navigation {
+	font-family: Gotham-Rounded-Bold;
+	.navbar {
+		padding: 0;
+		ul {
+			li {
+				a {
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+	@media (max-width: 768px) {
+		.navbar-nav {
+			width: 100%;
+			.nav-item.logo {
+				width: 50%;
+			}
+			.nav-btn {
+				width: 50%;
+				text-align: right;
+				margin-top: 15px;
+			}
+		}
+		.navbar-collapse {
+			.navbar-nav {
+				.nav-item {
+					text-align: center;
+					transition: 300ms;
+					&:hover {
+						background:$nav-hover;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.download {
+	height: $section-height;
+	background: $download-section-bg;
+	.download-content {
+		margin-top: $content-margin;
+		text-align: center;
+		position: relative;
+		h1 {
+			text-transform: uppercase;
+			color: $download-header-color;
+			font-family: Gotham-Rounded-Medium;
+		}
+		p {
+			color: $download-paragraph-color;
+			font-family: Gotham-Rounded-Book;
+			text-align: justify;
+		}
+	}
+	@media (max-width: 768px ) {
+	.download-content {
+		margin-top: $content-margin*0.7;
+		}
+	}
+	@media (max-width: 480px) {
+	.download-content {
+		margin-top: $content-margin*0.4;
+	}
+	}
+}

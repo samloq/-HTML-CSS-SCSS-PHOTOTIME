@@ -1,0 +1,20 @@
+.community {
+	height: $section-height;
+	background-image: url(../images/Livello.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	.community-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		h1 {
+			color: $our-header-color;
+			font-family: Gotham-Rounded-Medium;
+			text-transform: uppercase;
+		}
+	}
+}

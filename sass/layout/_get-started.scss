@@ -1,0 +1,39 @@
+.get-started {
+	height: $section-height;
+	overflow: hidden;
+	background:	$get-started-section-bg;
+	.get-started-content {
+		margin-top: $content-margin*0.5;
+		h1 {
+			color: $get-started-header-color;
+			font-family: Gotham-Rounded-Medium;
+		}
+		p {
+			color: $get-started-paragrap-color;
+			font-family: Gotham-Rounded-Book;
+		}
+	}
+	img {
+		position: absolute;
+	    transform: translate(0%, 13%);
+	}
+	@media (max-width: 992px) {
+  		img {
+			position: absolute;
+		    transform: translate(-10%, -10%);
+		}
+	}
+	@media (max-width: 768px) {
+		img {
+			transform: translate(-30%, -10%);
+		}
+	}
+	@media (max-width: 480px) {
+		img {
+			display: none;
+		}
+		.get-started-content {
+			margin-top: $content-margin*1.4;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+h1 {
+  @include fluid-type(18px, 20px, 420px, 1200px);
+}
+
+p {
+  @include fluid-type(14px, 18px, 420px, 1200px);
+}
+
+*:focus {outline:none}
+
+
+$content-margin: 100px;
+
+$section-height: 500px;
