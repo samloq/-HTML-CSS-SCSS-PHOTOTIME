@@ -1,7 +1,7 @@
 {
   "name": "phototime",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://github.com/strejcik/-HTML-CSS-SCSS-PHOTOTIME",
   "main": "index.js",
   "scripts": {
     "test": "npm-run-all test:*",
@@ -22,17 +22,13 @@
     "watch:sassprefixer": "onchange -d 100 sass -- npm-run-all build-dev:sass -s build:autoprefixer",
     "watch:browsersync": "browser-sync start --server --files 'css/style.css' '*.html' -w"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/strejcik/-HTML-CSS-SCSS-PHOTOTIME/issues"
   },
-  "homepage": "",
+  "homepage": "https://strejcik.github.io/-HTML-CSS-SCSS-PHOTOTIME/",
   "dependencies": {},
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",

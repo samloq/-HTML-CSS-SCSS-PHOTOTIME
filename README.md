@@ -13,3 +13,4 @@
 $ npm run watch
 </code></pre>
 <h3><a id="Preview_20"></a>Preview</h3>
+<p><a href="https://strejcik.github.io/-HTML-CSS-SCSS-PHOTOTIME/">https://strejcik.github.io/-HTML-CSS-SCSS-PHOTOTIME/</a></p>
